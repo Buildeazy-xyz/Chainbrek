@@ -1,0 +1,7 @@
+version: "2"
+authtoken:  <32vG0pCk1Sbr8o4cTzrbh0KlocI_WsSaqpRF1rrFxi6v2XDx>
+tunnels:
+  chainbrek:
+    addr: 5173
+    proto: http
+
