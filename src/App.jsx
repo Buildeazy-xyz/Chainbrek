@@ -31,7 +31,7 @@ function LandingPage() {
       <header className="bg-gradient-to-r from-red-600 to-red-700 text-white">
         <div className="max-w-6xl mx-auto px-6 py-16 text-center">
           <img
-            src="/public/logo.png"
+            src="/logo.png"
             alt="Chainbrek Logo"
             className="h-24 md:h-32 mx-auto mb-6"
           />
