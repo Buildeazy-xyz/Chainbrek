@@ -57,7 +57,7 @@ function Login() {
         {/* Logo */}
         <div className="text-center mb-6">
           <img
-            src="/src/assets/logo.png"
+            src="/logo.png"
             alt="Chainbrek Logo"
             className="h-16 mx-auto animate__animated animate__bounceIn"
           />
