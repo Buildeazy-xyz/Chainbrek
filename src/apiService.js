@@ -25,7 +25,7 @@ const handleResponse = async (response) => {
 export const authAPI = {
   // Register new user
   register: async (userData) => {
-    const response = await fetch(`${API_BASE_URL}/auth/register`, {
+    const response = await fetch(`${API_BASE_URL}/api/auth/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(userData)
@@ -35,7 +35,7 @@ export const authAPI = {
 
   // Login user
   login: async (credentials) => {
-    const response = await fetch(`${API_BASE_URL}/auth/login`, {
+    const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(credentials)
@@ -45,7 +45,7 @@ export const authAPI = {
 
   // Verify token
   verify: async () => {
-    const response = await fetch(`${API_BASE_URL}/auth/verify`, {
+    const response = await fetch(`${API_BASE_URL}/api/auth/verify`, {
       method: 'GET',
       headers: getAuthHeaders()
     });
@@ -57,7 +57,7 @@ export const authAPI = {
 export const userAPI = {
   // Get all users (admin only)
   getAllUsers: async () => {
-    const response = await fetch(`${API_BASE_URL}/users`, {
+    const response = await fetch(`${API_BASE_URL}/api/users`, {
       method: 'GET',
       headers: getAuthHeaders()
     });
@@ -66,7 +66,7 @@ export const userAPI = {
 
   // Get user by ID
   getUserById: async (userId) => {
-    const response = await fetch(`${API_BASE_URL}/users/${userId}`, {
+    const response = await fetch(`${API_BASE_URL}/api/users/${userId}`, {
       method: 'GET',
       headers: getAuthHeaders()
     });
@@ -75,7 +75,7 @@ export const userAPI = {
 
   // Update user
   updateUser: async (userId, userData) => {
-    const response = await fetch(`${API_BASE_URL}/users/${userId}`, {
+    const response = await fetch(`${API_BASE_URL}/api/users/${userId}`, {
       method: 'PUT',
       headers: getAuthHeaders(),
       body: JSON.stringify(userData)
@@ -85,7 +85,7 @@ export const userAPI = {
 
   // Delete user
   deleteUser: async (userId) => {
-    const response = await fetch(`${API_BASE_URL}/users/${userId}`, {
+    const response = await fetch(`${API_BASE_URL}/api/users/${userId}`, {
       method: 'DELETE',
       headers: getAuthHeaders()
     });
@@ -97,7 +97,7 @@ export const userAPI = {
 export const onboardingAPI = {
   // Save onboarding data
   saveOnboarding: async (onboardingData) => {
-    const response = await fetch(`${API_BASE_URL}/onboarding`, {
+    const response = await fetch(`${API_BASE_URL}/api/onboarding`, {
       method: 'POST',
       headers: getAuthHeaders(),
       body: JSON.stringify(onboardingData)
@@ -107,7 +107,7 @@ export const onboardingAPI = {
 
   // Get user's onboarding data
   getOnboarding: async (userId) => {
-    const response = await fetch(`${API_BASE_URL}/onboarding/${userId}`, {
+    const response = await fetch(`${API_BASE_URL}/api/onboarding/${userId}`, {
       method: 'GET',
       headers: getAuthHeaders()
     });
@@ -119,7 +119,7 @@ export const onboardingAPI = {
 export const tournamentAPI = {
   // Get tournament data
   getTournamentData: async () => {
-    const response = await fetch(`${API_BASE_URL}/tournament`, {
+    const response = await fetch(`${API_BASE_URL}/api/tournament`, {
       method: 'GET',
       headers: getAuthHeaders()
     });
@@ -128,7 +128,7 @@ export const tournamentAPI = {
 
   // Get leaderboard
   getLeaderboard: async () => {
-    const response = await fetch(`${API_BASE_URL}/tournament/leaderboard`, {
+    const response = await fetch(`${API_BASE_URL}/api/tournament/leaderboard`, {
       method: 'GET',
       headers: getAuthHeaders()
     });
@@ -137,7 +137,7 @@ export const tournamentAPI = {
 
   // Invest in tournament
   investInTournament: async (amount) => {
-    const response = await fetch(`${API_BASE_URL}/tournament/invest`, {
+    const response = await fetch(`${API_BASE_URL}/api/tournament/invest`, {
       method: 'POST',
       headers: getAuthHeaders(),
       body: JSON.stringify({ amount })
@@ -147,7 +147,7 @@ export const tournamentAPI = {
 
   // Get user's tournament stats
   getUserTournamentStats: async () => {
-    const response = await fetch(`${API_BASE_URL}/tournament/user-stats`, {
+    const response = await fetch(`${API_BASE_URL}/api/tournament/user-stats`, {
       method: 'GET',
       headers: getAuthHeaders()
     });
