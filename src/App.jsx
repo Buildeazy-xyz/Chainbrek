@@ -15,7 +15,7 @@ function LandingPage() {
     const typed = new Typed("#typed", {
       strings: [
         "Chainbrek helps you stop gambling, protect your family, and grow your future with the power of AI.",
-        "Join millions of people 🚀 around the world 🌎 who are resisting gambling and building wealth with the help of this Chainbrek!",
+        "Join millions of people 🚀 around the world 🌎 who are resisting gambling and building wealth with the help of  Chainbrek!",
       ],
       typeSpeed: 60,
       backSpeed: 50,
