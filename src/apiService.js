@@ -1,5 +1,5 @@
 // API Service for Chainbrek Backend Integration
-const API_BASE_URL = 'https://chainbrek-backend.netlify.app/api';
+const API_BASE_URL = 'https://chainbrek-backend.onrender.com';
 
 // Helper function to get auth headers
 const getAuthHeaders = () => {
