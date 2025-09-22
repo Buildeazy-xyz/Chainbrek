@@ -15,9 +15,9 @@ function LandingPage() {
     const typed = new Typed("#typed", {
       strings: [
         "Chainbrek helps you stop gambling, protect your family, and grow your future with the power of AI.",
-        "Join millions of people 🚀 around the world 🌎 who are resisting gambling and building wealth with the help of this app!",
+        "Join millions of people 🚀 around the world 🌎 who are resisting gambling and building wealth with the help of this Chainbrek!",
       ],
-      typeSpeed: 40,
+      typeSpeed: 60,
       backSpeed: 50,
       loop: false,
     });
@@ -46,7 +46,7 @@ function LandingPage() {
             className="text-lg md:text-xl text-yellow-200 font-semibold h-8"
           ></p>
 
-          <div className="mt-12 flex justify-center space-x-4">
+          <div className="mt-16 flex justify-center space-x-4">
             <Link
               to="/register"
               className="bg-white text-red-600 px-6 py-3 rounded-lg shadow hover:bg-gray-100"
