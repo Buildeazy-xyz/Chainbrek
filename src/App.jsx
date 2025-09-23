@@ -72,10 +72,11 @@ function LandingPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-6 rounded-xl shadow hover:shadow-lg animate__animated animate__fadeInUp">
               <Brain className="mx-auto text-red-600 mb-4" size={40} />
-              <h3 className="font-bold text-lg mb-2">AI Risk Detection</h3>
+              <h3 className="font-bold text-lg mb-2">Gambling Resistance</h3>
               <p className="text-gray-600">
-                Stay safe with real-time monitoring of gambling patterns and risky behaviors.
-              </p>
+                Chainbrek helps you to break Gambling additional, transform betting losses into savings,
+                and helps you achieve real wealth
+               </p>
             </div>
             <div className="p-6 rounded-xl shadow hover:shadow-lg animate__animated animate__fadeInUp animate__delay-1s">
               <Shield className="mx-auto text-green-600 mb-4" size={40} />
