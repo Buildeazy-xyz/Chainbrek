@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Typed from "typed.js";
 import "animate.css";
-import { Brain, Shield, Users, Trophy } from "lucide-react";
+import { Shield, Users, Trophy, Ban } from "lucide-react";
 
 // Import pages
 import Register from "./Register.jsx";
@@ -71,7 +71,7 @@ function LandingPage() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="p-6 rounded-xl shadow hover:shadow-lg animate__animated animate__fadeInUp">
-              <Brain className="mx-auto text-red-600 mb-4" size={40} />
+              <Ban className="mx-auto text-red-600 mb-4" size={40} />
               <h3 className="font-bold text-lg mb-2">Gambling Resistance</h3>
               <p className="text-gray-600">
                 Chainbrek helps you to break Gambling addiction, transform betting losses into savings,
@@ -82,8 +82,9 @@ function LandingPage() {
               <Shield className="mx-auto text-green-600 mb-4" size={40} />
               <h3 className="font-bold text-lg mb-2">Wealth Protection</h3>
               <p className="text-gray-600">
-                Protect your hard-earned money and reinvest savings into your goals.
-              </p>
+                Chainbrek projects your savings and owode multiplies
+                them, turning every weekly step into lating wealth security 
+               </p>
             </div>
             <div className="p-6 rounded-xl shadow hover:shadow-lg animate__animated animate__fadeInUp animate__delay-2s">
               <Users className="mx-auto text-blue-600 mb-4" size={40} />
