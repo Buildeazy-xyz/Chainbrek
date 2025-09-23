@@ -74,7 +74,7 @@ function LandingPage() {
               <Brain className="mx-auto text-red-600 mb-4" size={40} />
               <h3 className="font-bold text-lg mb-2">Gambling Resistance</h3>
               <p className="text-gray-600">
-                Chainbrek helps you to break Gambling additional, transform betting losses into savings,
+                Chainbrek helps you to break Gambling addiction, transform betting losses into savings,
                 and helps you achieve real wealth
                </p>
             </div>
